@@ -4,6 +4,7 @@ import * as React from "react";
 import { Toolbar } from "@base-ui-components/react/toolbar";
 import Link from "next/link";
 import Image from "next/image";
+import { Button } from "@/components/Button";
 
 export default function Header() {
   return (
@@ -16,14 +17,10 @@ export default function Header() {
       </Link>
       <Toolbar.Group className="flex gap-1 ml-auto">
         <Link href="/" passHref>
-          <div className="flex h-8 items-center justify-center rounded-sm px-3 font-medium text-gray-600 select-none hover:bg-gray-100 focus-visible:bg-none focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-1 focus-visible:outline-blue-800 active:bg-gray-200">
-            Home
-          </div>
+          <Button variant="link">Home</Button>
         </Link>
         <Link href="/about" passHref>
-          <div className="flex h-8 items-center justify-center rounded-sm px-3 font-medium text-gray-600 select-none hover:bg-gray-100 focus-visible:bg-none focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-1 focus-visible:outline-blue-800 active:bg-gray-200">
-            About
-          </div>
+          <Button variant="link">About</Button>
         </Link>
       </Toolbar.Group>
     </Toolbar.Root>
