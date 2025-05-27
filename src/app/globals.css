@@ -3,20 +3,33 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #007bff; /* Example: Blue */
+  --primary-foreground: #ffffff;
+  --destructive: #dc3545; /* Example: Red */
+  --destructive-foreground: #ffffff;
+  --input: #ced4da; /* Example: Gray */
+  --accent: #f8f9fa; /* Example: Light Gray */
+  --accent-foreground: #171717;
+  --secondary: #6c757d; /* Example: Dark Gray */
+  --secondary-foreground: #ffffff;
+  --ring: #007bff; /* Example: Blue */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-input: var(--input);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-ring: var(--ring);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #ffffff;
-    --foreground: #000000;
-  }
 }
 
 body {
