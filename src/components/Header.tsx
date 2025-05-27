@@ -1,9 +1,11 @@
+"use client";
+
 import * as React from "react";
 import { Toolbar } from "@base-ui-components/react/toolbar";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function BaseHeader() {
+export default function Header() {
   return (
     <Toolbar.Root className="flex w-full items-center gap-4 rounded-md border border-gray-200 bg-gray-50 p-2">
       <Link href="/" passHref>
