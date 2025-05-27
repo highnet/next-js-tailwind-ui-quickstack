@@ -4,26 +4,29 @@ import { Button } from "@/components/Button";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-4 sm:p-12 lg:p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm flex-col">
-        <h1 className="text-4xl font-bold">Main</h1>
+        <h1 className="text-2xl sm:text-4xl font-bold">Main</h1>
         <p className="mt-2">This is the main page.</p>
-        <div className="mt-4 flex gap-2">
+        <div className="mt-4 flex flex-wrap gap-2">
           <Button
-            className="mt-2"
+            className="mt-2 text-xs sm:text-sm"
+            size="sm"
             onClick={() => window.open("https://nextjs.org", "_blank")}
           >
             Next.js
           </Button>
           <Button
-            className="mt-2"
+            className="mt-2 text-xs sm:text-sm"
+            size="sm"
             onClick={() => window.open("https://tailwindcss.com", "_blank")}
             variant="destructive"
           >
             Tailwind CSS
           </Button>
           <Button
-            className="mt-2"
+            className="mt-2 text-xs sm:text-sm"
+            size="sm"
             onClick={() => window.open("https://mui.com/base-ui/", "_blank")}
             variant="secondary"
           >
@@ -31,7 +34,8 @@ export default function Home() {
           </Button>
         </div>
         <Button
-          className="mt-4"
+          className="mt-4 text-xs sm:text-sm"
+          size="sm"
           onClick={() =>
             window.open(
               "https://github.com/highnet/next-js-tailwind-ui-quickstack",
