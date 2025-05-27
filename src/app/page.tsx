@@ -18,18 +18,30 @@ export default function Home() {
           <Button
             className="mt-2"
             onClick={() => window.open("https://tailwindcss.com", "_blank")}
-            variant="secondary"
+            variant="destructive"
           >
             Tailwind CSS
           </Button>
           <Button
             className="mt-2"
             onClick={() => window.open("https://mui.com/base-ui/", "_blank")}
-            variant="outline"
+            variant="secondary"
           >
             Base UI
-          </Button>{" "}
+          </Button>
         </div>
+        <Button
+          className="mt-4"
+          onClick={() =>
+            window.open(
+              "https://github.com/highnet/next-js-tailwind-ui-quickstack",
+              "_blank"
+            )
+          }
+          variant="outline"
+        >
+          Source Code
+        </Button>
       </div>
     </main>
   );
